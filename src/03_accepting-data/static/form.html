@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>form.html</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta name="description" content="" />
+</head>
+<body>
+    <h1>Sample form</h1>
+    <form action="/survey" method="POST" class="form-example">
+        <div class="form-example__row">
+            <label for="name">Your Name</label>
+            <input class="form-example__row__input" name="name" placeholder="e.g. John Doe" />
+        </div>
+        <div class="form-example__row">
+            <label for="happy">How happy are you with the conference?</label>
+            <select class="form-example__row__select" name="happy">
+                <option>Very happy</option>
+                <option>Somewhat Happy</option>
+                <option>Meh!</option>
+                <option>Grumpy</option>
+            </select>
+        </div>
+        <div class="form-example__row">
+            <label for="talk">What was the talk you liked the most?</label>
+            <select class="form-example__row__select" name="talk">
+                <option>Running Python in small places.</option>
+				<option>Effective bug hunting.</option>
+				<option>Data validation - the ugly parts.</option>
+				<option>The hitchiker guide to list comprehension.</option>
+            </select>"
+        </div>
+        <div class="form-example__row">
+            <button type="submit">Submit</button>
+        </div>
+    </form>
+</body>
+</html>

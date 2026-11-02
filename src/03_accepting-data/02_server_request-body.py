@@ -1,8 +1,9 @@
 from datetime import datetime
 from http import HTTPStatus
+
+import db
 from fastapi import FastAPI, HTTPException
 from pydantic import BaseModel, Field
-import db
 
 app = FastAPI()
 
